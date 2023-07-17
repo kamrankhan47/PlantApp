@@ -69,7 +69,7 @@ const Details = ({ navigation, route }: any) => {
           </Text>
         </View>
       </View>
-      <View style={{height:300,width:"100%",backgroundColor:"white",marginTop:200,borderTopLeftRadius:50,borderTopRightRadius:50}}>
+      <View style={{height:400,width:"100%",backgroundColor:"white",marginTop:200,borderTopLeftRadius:50,borderTopRightRadius:50}}>
         <View style={{left:20,top:20}}>
           <Text style={{fontSize:30,fontWeight:"bold",color:"black"}}>
             {item.name}
@@ -78,11 +78,11 @@ const Details = ({ navigation, route }: any) => {
             ulduzlar
           </Text>
         </View>
-        <View>
+        <View style={{flexDirection:"column",gap:50}}>
           <Text style={{fontSize:20,fontWeight:"bold",color:"black",top:30,left:20}}>
             Description
           </Text>
-          <Text style={{fontSize:20}}>
+          <Text style={{fontSize:20,marginHorizontal:20}}>
             {item.description}
           </Text>
         </View>

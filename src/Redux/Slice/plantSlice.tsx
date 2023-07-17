@@ -32,10 +32,16 @@ const PlantSlice = createSlice({
         state.favorite.push(item);
       }
     },
+    removeFavorite: (state, action) => {
+      const {item} = action.payload;
+      state.favorite = state.favorite.filter((q: any) => q.id !== item.id);
+      console.log('removeFavorite', state.favorite);
+      
+    }
   },
 
   extraReducers: {},
 });
 
-export const {makeHeartRed} = PlantSlice.actions;
+export const {makeHeartRed,removeFavorite} = PlantSlice.actions;
 export default PlantSlice.reducer;

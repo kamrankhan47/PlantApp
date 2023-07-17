@@ -45,7 +45,7 @@ const PlantsScreen = ({navigation}: any) => {
             width: 250,
             marginHorizontal: 20,
             gap: 20,
-            backgroundColor: 'white',
+            backgroundColor: '#6db665',
           }}>
           <View style={{marginLeft: 220, top: 10}}>
             <TouchableOpacity onPress={() => addtoFavorites(item)}>
@@ -69,7 +69,7 @@ const PlantsScreen = ({navigation}: any) => {
               position: 'absolute',
               marginTop: 300,
               flexDirection: 'row',
-              backgroundColor: 'grey',
+              backgroundColor: 'white',
               padding: 30,
             }}>
             <Text>{item.name}</Text>
